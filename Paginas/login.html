@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/login.css">
+    <title>Login - Mis Gastos</title>
+</head>
+<body>
+
+    <div id="login-page">
+
+        <div id="login-card">
+
+            <div id="login-logo">
+                <h2>Mis<span class="verde">Gastos</span></h2>
+                <p>Inicia sesión para continuar</p>
+            </div>
+
+            <div class="form-group">
+                <label>Usuario</label>
+                <input id="userInput" type="text" placeholder="Ej: carlos123">
+                <span class="errorRed" id="errorUser"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Contraseña</label>
+                <input id="passwordInput" type="password" placeholder="••••••••">
+                <span class="errorRed" id="errorPassword"></span>
+            </div>
+
+            <button id="btn-login">Iniciar sesión</button>
+
+            <div class="divider">¿No tienes cuenta?</div>
+
+            <button id="btn-registro">Crear cuenta</button>
+
+        </div>
+    </div>
+
+    <script src="../Js/login.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/registro.css">
+    <title>Registro - Mis Gastos</title>
+</head>
+<body>
+
+    <div id="registro-page">
+
+        <div id="registro-card">
+
+            <div id="registro-logo">
+                <h2>Mis<span class="verde">Gastos</span></h2>
+                <p>Crea tu cuenta gratis</p>
+            </div>
+
+            <div class="form-group">
+                <label>Nombre completo</label>
+                <input type="text" id="input-nombre" placeholder="Ej: Carlos López">
+                <span id="errorNombre" class="errorRed"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Usuario</label>
+                <input type="text" id="input-usuario" placeholder="Ej: carlos123">
+                <span id="errorUsers" class="errorRed"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Contraseña</label>
+                <input type="password" id="input-password" placeholder="Mínimo 4 caracteres">
+            </div>
+
+            <div class="form-group">
+                <label>Confirmar contraseña</label>
+                <input type="password" id="input-confirmar" placeholder="Repite tu contraseña">
+                <span id="errorContraseña" class="errorRed"></span>
+            </div>
+
+            <button id="btn-registrar">Crear cuenta</button>
+
+            <div class="divider">¿Ya tienes cuenta?</div>
+
+            <button id="btn-ir-login">Iniciar sesión</button>
+
+        </div>
+
+    </div>
+
+    <script src="/Js/registro.js"></script>
+
+</body>
+</html>

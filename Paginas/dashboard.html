@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/dashboard.css">
+    <title>Dashboard - Mis Gastos</title>
+</head>
+<body>
+
+    <div id="dashboard-page">
+
+        <nav id="topbar">
+            <div id="topbar-logo">
+                <h2>Mis<span class="verde">Gastos</span></h2>
+            </div>
+            <div id="topbar-user">
+                <div id="avatar">CL</div>
+                <span id="user-nombre">Carlos López</span>
+                <button id="btn-salir">Cerrar sesión</button>
+            </div>
+        </nav>
+
+        <div id="contenido">
+
+            <div id="dolar-bar">
+                💵 Tipo de cambio en tiempo real:
+                <strong id="valor-dolar">Cargando...</strong>
+            </div>
+
+            <div id="metrics">
+                <div class="metric">
+                    <p class="m-label">Ingresos</p>
+                    <p class="m-val" id="total-ingresos">S/ 0</p>
+                </div>
+                <div class="metric">
+                    <p class="m-label">Gastos</p>
+                    <p class="m-val" id="total-gastos">S/ 0</p>
+                </div>
+                <div class="metric">
+                    <p class="m-label">Balance</p>
+                    <p class="m-val" id="total-balance">S/ 0</p>
+                </div>
+            </div>
+
+            <div id="bottom">
+
+                <div class="panel" id="panel-movimientos">
+                    <p class="panel-title">Movimientos</p>
+                    <div id="lista-movimientos">
+                        <!-- JS va a poner los movimientos aquí -->
+                    </div>
+                </div>
+
+                <div class="panel" id="panel-agregar">
+                    <p class="panel-title">Agregar movimiento</p>
+
+                    <div class="form-group">
+                        <label>Descripción</label>
+                        <input type="text" id="input-descripcion" placeholder="Ej: Almuerzo, Sueldo...">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Monto (S/)</label>
+                        <input type="number" id="input-monto" placeholder="0.00">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tipo</label>
+                        <div id="tipo-row">
+                            <button class="tipo-btn sel" id="btn-gasto">Gasto</button>
+                            <button class="tipo-btn" id="btn-ingreso">Ingreso</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Categoría</label>
+                        <select id="input-categoria">
+                            <option value="Comida">Comida</option>
+                            <option value="Vivienda">Vivienda</option>
+                            <option value="Trabajo">Trabajo</option>
+                            <option value="Transporte">Transporte</option>
+                            <option value="Servicios">Servicios</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <p id="mensaje-error"></p>
+
+                    <button id="btn-agregar">Guardar movimiento</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
