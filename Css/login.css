@@ -102,7 +102,6 @@ body {
     font-family: "Changa One", sans-serif;
     transition: background 0.2s;
 }
-
 #btn-login:hover {
     background: var(--verde-oscuro);
 }
@@ -126,7 +125,17 @@ body {
     font-family: "Changa One", sans-serif;
     transition: background 0.2s;
 }
-
 #btn-registro:hover {
     background: var(--verde-claro);
+}
+
+#back{
+    display: block;
+    text-align: end;
+    font-size: 13px;
+    color: var(--texto-muted);
+    cursor: pointer;
+}
+#back:hover{
+    color:  #708096;
 }

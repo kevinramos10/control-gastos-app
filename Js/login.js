@@ -1,3 +1,7 @@
+import { redirectDashboard } from "./authGuard.js"
+
+redirectDashboard()
+
 //capturamos inputs
 let userInput = document.getElementById('userInput')
 let passwordInput = document.getElementById('passwordInput')
@@ -51,4 +55,6 @@ btnRegistro.addEventListener('click', () => {
     location.href = '../paginas/registro.html'
 })
 
-
+document.getElementById('back').addEventListener('click', () => {
+    location.href = '../home.html'
+})
