@@ -6,10 +6,10 @@ Aplicación web de control de gastos personales desarrollada con HTML, CSS y Jav
 
 ## 📸 Vista previa
 
-![Home](../img/menu.png)
-![Login](../img/login.png)
-![Registro](../img/registro.png)
-![Dashboard](../img/dashboard.png)
+![Home](img/menu.png)
+![Login](img/login.png)
+![Registro](img/registro.png)
+![Dashboard](img/dashboard.png)
 
 ---
 
