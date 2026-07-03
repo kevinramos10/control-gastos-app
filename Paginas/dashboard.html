@@ -16,16 +16,18 @@
             </div>
             <div id="topbar-user">
                 <div id="avatar">CL</div>
-                <span id="user-nombre">Carlos López</span>
+                <span id="user-nombre"></span>
                 <button id="btn-salir">Cerrar sesión</button>
             </div>
         </nav>
 
         <div id="contenido">
 
-            <div id="dolar-bar">
-                💵 Tipo de cambio en tiempo real:
-                <strong id="valor-dolar">Cargando...</strong>
+            <div id="fecha-bar">
+                <span id="icono-fecha">📅</span>
+                <span id="texto-fecha">Cargando fecha...</span>
+                <span id="separador">·</span>
+                <span id="texto-hora">Cargando hora...</span>
             </div>
 
             <div id="metrics">
@@ -68,7 +70,7 @@
                     <div class="form-group">
                         <label>Tipo</label>
                         <div id="tipo-row">
-                            <button class="tipo-btn sel" id="btn-gasto">Gasto</button>
+                            <button class="tipo-btn" id="btn-gasto">Gasto</button>
                             <button class="tipo-btn" id="btn-ingreso">Ingreso</button>
                         </div>
                     </div>

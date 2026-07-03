@@ -9,3 +9,8 @@ export function redirectLogin(){
         location.href = '../paginas/login.html'
     }
 }
+
+export function logout(){
+    localStorage.removeItem('usuarioActivo')
+    location.href = '../paginas/login.html'
+}

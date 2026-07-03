@@ -82,17 +82,30 @@ body {
     padding: 1.5rem 2rem;
 }
 
-#dolar-bar {
+#fecha-bar {
     background: #fff;
     border: 1px solid var(--borde);
     border-radius: 10px;
     padding: 10px 16px;
-    font-size: 13px;
+    font-size: 14px;
     color: var(--texto-muted);
     margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 
-    strong {
+    #texto-fecha {
         color: var(--verde-oscuro);
+        font-weight: 500;
+    }
+
+    #separador {
+        color: var(--borde);
+    }
+
+    #texto-hora {
+        color: var(--verde-oscuro);
+        font-weight: 500;
     }
 }
 
@@ -148,9 +161,9 @@ body {
 .tx-row {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 2px;
     padding: 7px 0;
-    border-bottom: 0.5px solid var(--verde-claro);
+    border-bottom: 1px solid var(--borde);
 
     .dot {
         width: 8px;
@@ -159,8 +172,8 @@ body {
         flex-shrink: 0;
     }
 
-    .dot-g { background: var(--verde); }
-    .dot-r { background: #ef4444; }
+    .dot-g { background: var(--verde);}
+    .dot-r { background: #ef4444;}
 
     .tx-name {
         flex: 1;
@@ -247,3 +260,6 @@ body {
 }
 
 #btn-agregar:hover { background: var(--verde-oscuro); }
+
+.amt-g { color: var(--verde); }
+.amt-r { color: red; }
