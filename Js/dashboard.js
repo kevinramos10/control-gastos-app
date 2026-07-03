@@ -32,15 +32,7 @@ btnIngreso.addEventListener('click', () => {
 })
 //////
 
-
-
 function mostrarHorario(){
-    let dia = 0
-    let mes = 0
-    let año = 0
-    let hora = 0
-    let minuto = 0
-    let segundo = 0
 
     fetch('https://timeapi.io/api/time/current/zone?timeZone=America/Lima')
     .then(response => response.json())
@@ -63,18 +55,6 @@ function mostrarHorario(){
 
 }
 mostrarHorario()
-
-
-
-
-
-
-
-
-
-
-
-
 
 //Capturamos los inputs
 let descripcionInput = document.getElementById('input-descripcion')
